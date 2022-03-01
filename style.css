@@ -1,0 +1,53 @@
+.anim {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    /* animation: animation-name | animation-duration | animation timing function | animation delay | animation iteration | animation direction | animation fill mode */
+    animation-name: move;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+hr {
+    position: relative;
+    top: 459px;
+    font-weight: 900px;
+}
+@keyframes move {
+    0% {
+        position: relative;
+        transform: scaleY(0.7);
+        top: 500px;
+        left: 0px;
+        background-image: linear-gradient(to bottom, greenyellow, yellow);
+    }
+    25% {
+        position: relative;
+        transform: scaleY(1);
+        top: 0px;
+        left: 500px;
+        background-image: linear-gradient(to bottom, red, orange);
+    }
+    50%{
+        position: relative;
+        transform: scaleY(0.7);
+        top: 500px;
+        left: 1000px;
+        background-image: linear-gradient(to bottom, greenyellow, lightgreen);
+    }
+    75%{
+        position: relative;
+        transform: scaleY(1);
+        top: 0px;
+        left: 500px;
+        background-image: linear-gradient(to bottom, red, orange);
+    }
+    100%{
+        position: relative;
+        transform: scaleY(0.7);
+        top: 500px;
+        left: 0px;
+        background-image: linear-gradient(to bottom, greenyellow, yellow);
+    }
+}
